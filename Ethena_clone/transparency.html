@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparency | Ethena</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body class="dashboard-page with-bg">
+
+    <nav>
+        <div class="nav-inner">
+            <a href="index1.html" class="nav-logo">
+                <img src="assets/asset 0.svg" alt="Ethena Logo" style="height: 24px; margin-right: 8px;">
+                <h1>Ethena</h1>
+            </a>
+
+            <div class="nav-links">
+                <a href="index1.html">Home</a>
+                <a href="#" class="nav-dropdown">Products <img src="assets/asset 0.svg" class="nav-chevron"></a>
+                <a href="ecosystem.html">Ecosystem</a>
+                <a href="#">Network</a>
+                <a href="transparency.html" class="active">Transparency</a>
+                <a href="#" class="nav-dropdown">Resources <img src="assets/asset 0.svg" class="nav-chevron"></a>
+            </div>
+
+            <div class="nav-right">
+                <div class="stats-pill">
+                    <img src="assets/asset 0.svg" style="width: 14px; opacity: 0.8;">
+                    <span>$ 7.3B</span>
+                    <span style="color: #666; margin-left: 4px; font-size: 0.8rem;">ⓘ</span>
+                    <div style="width: 1px; height: 12px; background: #333; margin: 0 10px;"></div>
+                    <img src="assets/asset 0.svg" style="width: 14px; opacity: 0.8;">
+                    <span>4.3% APY</span>
+                    <span style="color: #666; margin-left: 4px; font-size: 0.8rem;">ⓘ</span>
+                </div>
+                <a href="login.html" class="nav-btn">Launch App</a>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div class="dashboard-wrap">
+        <div class="top-links">
+            <a href="#" class="link active">Transparency</a>
+            <a href="#" class="link">Market Data</a>
+            <a href="#" class="link">Oracle Specifications</a>
+        </div>
+
+        <div class="main-banner">
+            <div class="banner-content">
+                <div class="left-side">
+                    <span class="title">Proof of Reserves</span>
+                    <div class="logos">
+                        <div class="logo-item">
+                            <img src="assets/asset 112.svg" class="icon"> ht.digital
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/asset 113.svg" class="icon"> CHAOS LABS
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/asset 114.svg" class="icon"> LlamaRisk
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/asset 126.svg" class="icon"> Chainlink
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="desc">
+                Independent third-party verification of the backing assets of USDe.
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <div class="box">
+                <div class="head">
+                    <span class="label">Protocol Backing Ratio</span>
+                </div>
+                <div class="val">101.04%</div>
+            </div>
+
+            <div class="box">
+                <div class="head">
+                    <span class="label">Total Backing (+ Reserve Fund) <span
+                            style="font-size: 0.8rem; color: #666">ⓘ</span></span>
+                    <span class="arrow">↗</span>
+                </div>
+                <div class="val">$6.54B</div>
+            </div>
+
+            <div class="box">
+                <div class="head">
+                    <span class="label">USDe Total Supply <span style="font-size: 0.8rem; color: #666">ⓘ</span></span>
+                </div>
+                <div class="val">6.47B</div>
+            </div>
+
+            <div class="box">
+                <div class="head">
+                    <span class="label">USDe Price</span>
+                </div>
+                <div class="val">$0.9993</div>
+            </div>
+        </div>
+
+        <div class="charts-grid">
+
+            <div class="chart-card">
+                <div class="chart-header-row">
+                    <span class="chart-title">System Backing</span>
+                    <div class="chart-controls">
+                        <div class="control-btn">$</div>
+                        <div class="control-btn">%</div>
+                        <div class="control-btn active">All</div>
+                    </div>
+                </div>
+                <div
+                    style="position: relative; height: 100%; width: 100%; flex: 1; min-height: 300px; display: flex; align-items: flex-end;">
+                    <svg viewBox="0 0 500 250" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+                        <line x1="0" y1="50" x2="500" y2="50" stroke="#222" stroke-width="1" />
+                        <line x1="0" y1="100" x2="500" y2="100" stroke="#222" stroke-width="1" />
+                        <line x1="0" y1="150" x2="500" y2="150" stroke="#222" stroke-width="1" />
+                        <line x1="0" y1="200" x2="500" y2="200" stroke="#222" stroke-width="1" />
+
+                        <path
+                            d="M0,250 L0,220 C50,225 100,225 150,240 C200,230 250,180 300,100 C350,50 400,80 450,150 L500,170 L500,250 Z"
+                            fill="#C084FC" opacity="0.8" />
+
+                        <path
+                            d="M0,250 L0,230 C50,235 100,235 150,245 C200,240 250,200 300,150 C350,120 400,140 450,180 L500,200 L500,250 Z"
+                            fill="#3B82F6" opacity="0.8" />
+
+                        <path
+                            d="M0,250 L0,240 C50,242 100,242 150,248 C200,245 250,230 300,200 C350,180 400,190 450,210 L500,220 L500,250 Z"
+                            fill="#93C5FD" opacity="0.9" />
+
+                        <text x="10" y="245" fill="#666" font-size="10">1/25</text>
+                        <text x="100" y="245" fill="#666" font-size="10">3/25</text>
+                        <text x="200" y="245" fill="#666" font-size="10">6/25</text>
+                        <text x="300" y="245" fill="#666" font-size="10">9/25</text>
+                        <text x="400" y="245" fill="#666" font-size="10">12/25</text>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- USDe Price Chart (SVG Only) -->
+            <div class="chart-card">
+                <div class="chart-header-row">
+                    <span class="chart-title">USDe Secondary Price <span class="info-icon">ⓘ</span></span>
+                    <div class="chart-controls">
+                        <div class="control-btn active">All</div>
+                    </div>
+                </div>
+                <div style="position: relative; height: 100%; width: 100%; flex: 1; min-height: 250px;">
+                    <svg viewBox="0 0 500 250" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+                        <!-- Axis Lines -->
+                        <line x1="30" y1="0" x2="30" y2="230" stroke="#222" stroke-width="1" />
+                        <line x1="30" y1="230" x2="500" y2="230" stroke="#222" stroke-width="1" />
+
+                        <!-- Erratic Line -->
+                        <polyline
+                            points="30,125 50,128 70,120 90,125 110,122 130,125 150,123 170,126 190,125 210,120 230,125 250,124 270,125 290,126 310,125 330,120 350,123 370,125 390,124 410,126 430,125 450,125 470,125 500,125"
+                            fill="none" stroke="#94a3b8" stroke-width="1.5" />
+
+                        <!-- Y Axis Labels -->
+                        <text x="5" y="50" fill="#666" font-size="10">$1.02</text>
+                        <text x="5" y="125" fill="#666" font-size="10">$1.00</text>
+                        <text x="5" y="200" fill="#666" font-size="10">$0.98</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row of Charts -->
+        <div class="charts-grid">
+            <!-- Venue Breakdown Chart (CSS Conic Gradient) -->
+            <div class="chart-card">
+                <div class="chart-header-row">
+                    <span class="chart-title">Venue Breakdown</span>
+                </div>
+                <div
+                    style="position: relative; height: 100%; width: 100%; flex: 1; display: flex; justify-content: center; align-items: center; min-height: 250px;">
+                    <!-- Pure CSS Doughnut Chart -->
+                    <div style="
+                        width: 200px; 
+                        height: 200px; 
+                        border-radius: 50%; 
+                        background: conic-gradient(
+                            #a5b4fc 0% 15%, 
+                            #c084fc 15% 21%, 
+                            #38bdf8 21% 27%, 
+                            #ffffff 27% 30%, 
+                            #9ca3af 30% 32%, 
+                            #475569 32% 34%, 
+                            #22d3ee 34% 100%
+                        );
+                        position: relative;
+                        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+                    ">
+                        <!-- Inner Circle for Doughnut Effect -->
+                        <div style="
+                            position: absolute; 
+                            top: 50%; 
+                            left: 50%; 
+                            transform: translate(-50%, -50%); 
+                            width: 130px; 
+                            height: 130px; 
+                            background: #050505; 
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                        ">
+                            <span style="color: #22d3ee; font-size: 1.5rem; font-weight: bold;">61%</span>
+                            <span style="color: #666; font-size: 0.8rem;">Undelegated</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Legend -->
+                <div class="chart-legend" style="margin-top: 20px; justify-content: center;">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #a5b4fc;"></div> Binance
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #c084fc;"></div> Bybit
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #38bdf8;"></div> OKX
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #22d3ee;"></div> Undelegated
+                    </div>
+                </div>
+            </div>
+
+            <!-- USDe Supply Chart (SVG Only) -->
+            <div class="chart-card">
+                <div class="chart-header-row">
+                    <span class="chart-title">USDe Supply</span>
+                    <div class="chart-controls">
+                        <div class="control-btn active">All</div>
+                    </div>
+                </div>
+                <div style="position: relative; height: 100%; width: 100%; flex: 1; min-height: 250px;">
+                    <svg viewBox="0 0 500 250" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+                        <!-- Axis Lines -->
+                        <line x1="30" y1="0" x2="30" y2="230" stroke="#222" stroke-width="1" />
+                        <line x1="30" y1="230" x2="500" y2="230" stroke="#222" stroke-width="1" />
+
+                        <!-- Mountain Shape Line -->
+                        <path
+                            d="M30,230 L100,230 L130,220 L160,200 L200,180 L250,190 L300,140 L350,150 L400,160 L420,50 L440,60 L460,120 L500,160"
+                            fill="none" stroke="#e2e8f0" stroke-width="2" />
+
+                        <!-- Y Axis Labels -->
+                        <text x="5" y="50" fill="#666" font-size="10">$14B</text>
+                        <text x="5" y="100" fill="#666" font-size="10">$10B</text>
+                        <text x="5" y="150" fill="#666" font-size="10">$6B</text>
+                        <text x="5" y="200" fill="#666" font-size="10">$2B</text>
+
+                        <!-- X Axis Labels -->
+                        <text x="30" y="245" fill="#666" font-size="10">12/23</text>
+                        <text x="150" y="245" fill="#666" font-size="10">6/24</text>
+                        <text x="270" y="245" fill="#666" font-size="10">12/24</text>
+                        <text x="390" y="245" fill="#666" font-size="10">6/25</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backing Table -->
+        <div class="full-width-card">
+            <div class="table-header">
+                <div>
+                    <h3 class="chart-title" style="margin-bottom: 4px;">Backing</h3>
+                    <p style="color: #666; font-size: 0.8rem;">Last Updated: 16 Dec 25 12:08</p>
+                </div>
+                <div class="notional-badge">Backing Notional 6.49B</div>
+            </div>
+
+            <table class="backing-table">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;"></th>
+                        <th>
+                            <div class="th-logo"><img src="assets/asset 29.svg"> BINANCE <span
+                                    style="color: #666; font-weight: 400;">26%</span></div>
+                        </th>
+                        <th>
+                            <div class="th-logo"><img src="assets/asset 115.svg"> BYBIT <span
+                                    style="color: #666; font-weight: 400;">6%</span></div>
+                        </th>
+                        <th>
+                            <div class="th-logo"><img src="assets/asset 64.svg"> OKX <span
+                                    style="color: #666; font-weight: 400;">5%</span></div>
+                        </th>
+                        <th>
+                            <div class="th-logo"><img src="assets/asset 116.svg"> Deribit <span
+                                    style="color: #666; font-weight: 400;">2%</span></div>
+                        </th>
+                        <th>
+                            <div class="th-logo"><img src="assets/asset 117.svg"> Bitget</div>
+                        </th>
+                        <th>
+                            <div class="th-logo"><img src="assets/asset 0.svg"> Undelegated Backing <span
+                                    style="color: #666; font-weight: 400;">61%</span> <span style="color: #666">ⓘ</span>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="assets/asset 118.svg" class="asset-icon"> BTC <span
+                                style="color: #666; margin-left: 6px;">22%</span></td>
+                        <td>$1B</td>
+                        <td>$100.86M</td>
+                        <td>$208.36M</td>
+                        <td>$136.3M</td>
+                        <td>$0</td>
+                        <td>$0.06M</td>
+                    </tr>
+                    <tr>
+                        <td><img src="assets/asset 119.svg" class="asset-icon"> ETH & ETH LSTs <span
+                                style="color: #666; margin-left: 6px;">14%</span> <span
+                                style="color: #666; font-size: 0.8rem;">ⓘ</span></td>
+                        <td>$624.32M</td>
+                        <td>$183.64M</td>
+                        <td>$66.35M</td>
+                        <td>$2.83M</td>
+                        <td>$0</td>
+                        <td>$0.07M</td>
+                    </tr>
+                    <tr>
+                        <td><img src="assets/asset 120.svg" class="asset-icon"> SOL <span
+                                style="color: #666; margin-left: 6px;">0%</span></td>
+                        <td>$10.8M</td>
+                        <td>$0</td>
+                        <td>$0</td>
+                        <td>$0</td>
+                        <td>$0</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr>
+                        <td><img src="assets/asset 121.svg" class="asset-icon"> Liquid Stables <span
+                                style="color: #666; margin-left: 6px;">64%</span> <span
+                                style="color: #666; font-size: 0.8rem;">ⓘ</span></td>
+                        <td>$47.31M</td>
+                        <td>$80.51M</td>
+                        <td>$28.99M</td>
+                        <td>$0</td>
+                        <td>$0</td>
+                        <td>$3.98B</td>
+                    </tr>
+                    <tr>
+                        <td><img src="assets/asset 122.svg" class="asset-icon"> Other <span
+                                style="color: #666; margin-left: 6px;">0%</span> <span
+                                style="color: #666; font-size: 0.8rem;">ⓘ</span></td>
+                        <td>$14.79M</td>
+                        <td>$0</td>
+                        <td>$0</td>
+                        <td>$0</td>
+                        <td>$0</td>
+                        <td>$0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Bottom Grid: Custodian & PoR -->
+        <div class="bottom-grid">
+            <!-- Custodian Attestations -->
+            <div class="chart-card">
+                <div class="chart-header-row">
+                    <div>
+                        <span class="chart-title">Custodian Attestations <span class="info-icon">ⓘ</span></span>
+                        <p style="color: #666; font-size: 0.8rem; margin-top: 4px;">Last Updated: 01 December 2025 19:35
+                        </p>
+                    </div>
+                    <div class="chart-controls">
+                        <div class="control-btn">All</div>
+                        <div class="control-btn active">2025</div>
+                        <div class="control-btn">2024</div>
+                    </div>
+                </div>
+
+                <div class="custodian-logos">
+                    <img src="assets/asset 123.svg" alt="copper">
+                    <img src="assets/asset 124.svg" alt="ceffu">
+                </div>
+
+                <div class="months-grid">
+                    <div class="month-card">
+                        <span>November 2025 <span style="font-size: 0.8rem;">🛡️</span></span>
+                        <span class="arrow-small">↗</span>
+                    </div>
+                    <div class="month-card">
+                        <span>October 2025 <span style="font-size: 0.8rem;">🛡️</span></span>
+                        <span class="arrow-small">↗</span>
+                    </div>
+                    <div class="month-card">
+                        <span>September 2025 <span style="font-size: 0.8rem;">🛡️</span></span>
+                        <span class="arrow-small">↗</span>
+                    </div>
+                    <div class="month-card">
+                        <span>August 2025 <span style="font-size: 0.8rem;">🛡️</span></span>
+                        <span class="arrow-small">↗</span>
+                    </div>
+                    <div class="month-card">
+                        <span>July 2025 <span style="font-size: 0.8rem;">🛡️</span></span>
+                        <span class="arrow-small">↗</span>
+                    </div>
+                    <div class="month-card">
+                        <span>June 2025 <span style="font-size: 0.8rem;">🛡️</span></span>
+                        <span class="arrow-small">↗</span>
+                    </div>
+                    <div class="month-card">
+                        <span>May 2025 <span style="font-size: 0.8rem;">🛡️</span></span>
+                        <span class="arrow-small">↗</span>
+                    </div>
+                    <div class="month-card">
+                        <span>April 2025 <span style="font-size: 0.8rem;">🛡️</span></span>
+                        <span class="arrow-small">↗</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proof of Reserves -->
+            <div class="chart-card">
+                <div class="chart-header-row">
+                    <div>
+                        <span class="chart-title">Proof of Reserves <span class="info-icon">ⓘ</span></span>
+                        <p style="color: #666; font-size: 0.8rem; margin-top: 4px;">Last Updated: 12 Dec 25 05:34</p>
+                    </div>
+                    <div class="control-btn"
+                        style="background: none; border: none; font-size: 0.85rem; color: #4da6ff;">How it works? <span
+                            style="font-weight: 700; color: #4da6ff;">Learn More</span></div>
+                </div>
+
+                <div class="por-partners">
+                    <div class="por-partner-item"><img src="assets/asset 112.svg"> ht.digital</div>
+                    <div class="por-partner-item"><img src="assets/asset 113.svg"> CHAOS LABS</div>
+                    <div class="por-partner-item"><img src="assets/asset 114.svg"> LlamaRisk</div>
+                    <div class="por-partner-item"><img src="assets/asset 126.svg"> Chainlink</div>
+                </div>
+
+                <div class="por-date">12 Dec 2025</div>
+
+                <table class="por-table">
+                    <thead>
+                        <tr>
+                            <th>Auditor</th>
+                            <th style="text-align: center;">Overcollateralized</th>
+                            <th style="text-align: center;">Delta-Neutral</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ethena Labs</td>
+                            <td style="text-align: center;">
+                                <div class="check-pill"><span class="check-icon">✓</span> Yes</div>
+                            </td>
+                            <td style="text-align: center;">
+                                <div class="check-pill"><span class="check-icon">✓</span> Yes</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>HT Digital</td>
+                            <td style="text-align: center;">
+                                <div class="check-pill"><span class="check-icon">✓</span> Yes</div>
+                            </td>
+                            <td style="text-align: center;">
+                                <div class="check-pill"><span class="check-icon">✓</span> Yes</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Chaos Labs ↗</td>
+                            <td style="text-align: center;">
+                                <div class="check-pill"><span class="check-icon">✓</span> Yes</div>
+                            </td>
+                            <td style="text-align: center;">
+                                <div class="check-pill"><span class="check-icon">✓</span> Yes</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LlamaRisk ↗</td>
+                            <td style="text-align: center;">
+                                <div class="check-pill"><span class="check-icon">✓</span> Yes</div>
+                            </td>
+                            <td style="text-align: center;">
+                                <div class="check-pill"><span class="check-icon">✓</span> Yes</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Independent Data Links -->
+        <div class="independent-data-links">
+            <div class="chart-header-row">
+                <span class="chart-title" style="font-weight: 700;">Independent Third Party Data Links</span>
+            </div>
+
+            <div class="data-links-grid">
+                <!-- Column 1 -->
+                <div class="data-link-col">
+                    <a href="#" class="data-link-item">
+                        <span class="link-name">Llamarisk</span>
+                        <span class="link-arrow">↗</span>
+                    </a>
+                    <a href="#" class="data-link-item">
+                        <span class="link-name">Chaos Labs</span>
+                        <span class="link-arrow">↗</span>
+                    </a>
+                    <a href="#" class="data-link-item">
+                        <span class="link-name">DefiLlama</span>
+                        <span class="link-arrow">↗</span>
+                    </a>
+                    <a href="#" class="data-link-item">
+                        <span class="link-name">Debank</span>
+                        <span class="link-arrow">↗</span>
+                    </a>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="data-link-col">
+                    <a href="#" class="data-link-item">
+                        <span class="link-name">Dune</span>
+                        <span class="link-arrow">↗</span>
+                    </a>
+                    <a href="#" class="data-link-item">
+                        <span class="link-name">Into the Block</span>
+                        <span class="link-arrow">↗</span>
+                    </a>
+                    <a href="#" class="data-link-item">
+                        <span class="link-name">Token Terminal</span>
+                        <span class="link-arrow">↗</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="simple-footer">
+            <a href="#" class="footer-branding">
+                <img src="assets/asset 0.svg" alt="Ethena" style="height: 24px;"> Ethena
+            </a>
+            <div class="footer-icons">
+                <!-- X (Twitter) -->
+                <a href="#"><svg class="footer-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg></a>
+                <!-- Github -->
+                <a href="#"><svg class="footer-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg></a>
+                <!-- Telegram -->
+                <a href="#"><svg class="footer-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 11.944 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                    </svg></a>
+                <!-- Extras for completeness -->
+                <a href="#"><span style="font-size: 1.2rem; line-height: 1;">↺</span></a>
+                <a href="#"><span style="font-size: 1.2rem; line-height: 1;">🐞</span></a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

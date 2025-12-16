@@ -1,0 +1,337 @@
+/* Login Page Styles - Premium Ultra-High Fidelity */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+}
+
+body.login-page-body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #030303;
+    /* Refined Dotted Background */
+    background-image:
+        radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+        radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    /* Subtle Vignette for focus */
+    box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.9);
+}
+
+/* Hide legacy effects */
+.background-effects {
+    display: none;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 440px;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+    /* Entrance Animation */
+    animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-card {
+    background-color: #0A0A0A;
+    /* Deep Black */
+    /* Premium 1px border highlight */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.5),
+        /* Inner shadow for depth */
+        0 20px 40px -10px rgba(0, 0, 0, 0.6);
+    /* Soft drop shadow */
+    border-radius: 20px;
+    padding: 40px 36px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle glass accent at top */
+.login-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+/* Logo Area */
+.logo-area {
+    margin-bottom: 32px;
+}
+
+.logo-area h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+}
+
+.logo-area p {
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Form Elements */
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #e0e0e0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+    color: #000;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.input-group input::placeholder {
+    color: #777;
+    font-weight: 400;
+}
+
+.input-group input:focus {
+    /* Slight glowing white border effect */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 13px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.remember-me input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.remember-me input[type="checkbox"]:checked {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.remember-me input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.remember-me label {
+    color: #ccc;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.forgot-pass {
+    color: #4C72FF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.forgot-pass:hover {
+    color: #6C8AFF;
+    text-decoration: underline;
+}
+
+/* Buttons */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.login-btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.login-btn:active {
+    transform: translateY(0);
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.divider span {
+    padding: 0 12px;
+}
+
+/* Social Buttons */
+.social-login {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    transition: all 0.2s;
+}
+
+.social-btn:hover {
+    background-color: #f2f2f2;
+    transform: translateY(-1px);
+}
+
+/* Ensure icons are black */
+.social-btn svg {
+    display: block;
+}
+
+.social-btn svg path {
+    /* Most logos work best with original colours, but for uniformity if requested: */
+    /* fill: #000; */
+}
+
+/* Force GitHub icon black */
+.social-btn:first-child svg path {
+    fill: #000 !important;
+}
+
+
+/* Footer/Signup */
+.signup-link {
+    text-align: left;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 600;
+}
+
+.signup-link a {
+    color: #4C72FF;
+    text-decoration: none;
+    margin-left: 6px;
+    transition: color 0.2s;
+}
+
+.signup-link a:hover {
+    color: #6C8AFF;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 30px 24px;
+    }
+
+    .social-login {
+        flex-direction: column;
+    }
+}
